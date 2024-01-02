@@ -27,3 +27,17 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+/* Header starts here */
+/* .header-top-strip {
+} */
+
+/* Header ends here */

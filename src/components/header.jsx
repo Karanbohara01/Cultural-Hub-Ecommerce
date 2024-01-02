@@ -65,15 +65,15 @@ const Header = () => {
               <Link to={"about"}>About</Link>
             </div>
             <div className=" nav-links-nav col-3 d-flex align-items-center justify-content-around">
-              <Link className="d-flex">
+              <Link to={"wishlist"} className="d-flex">
                 <HiOutlineInboxIn className="fs-4 mx-2" />
                 <span>Wishlist</span>
               </Link>
-              <Link className="d-flex">
+              <Link to={"account"} className="d-flex">
                 <VscAccount className="fs-4 mx-2" />
                 <span>Account</span>
               </Link>
-              <Link className="d-flex">
+              <Link to={"cart"} className="d-flex">
                 <MdShoppingBasket className="fs-4 mx-2" />
                 <span>Cart</span>
               </Link>

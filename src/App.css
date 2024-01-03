@@ -47,12 +47,19 @@ button {
   text-transform: uppercase;
   color: var(--primary1);
 }
+.header-top-strip a {
+  color: var(--primary1);
+}
 
 .header-upper {
   background: var(--lighter2);
 }
 
-.nav-links-nav a {
+.nav-links-nav {
+  color: var(--search);
+}
+
+.social-icons a {
   color: var(--search);
 }
 
@@ -62,4 +69,20 @@ button {
 footer {
   background-color: var(--lighter2);
 }
+
+.pay img {
+  transition: 0.5s ease;
+}
+.pay img:hover {
+  transform: translateY(-10px);
+}
+
+.footer-details a {
+  color: var(--primary);
+}
 /* footer ends here */
+
+/* 
+Sidebar
+
+ */

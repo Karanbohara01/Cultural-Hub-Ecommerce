@@ -15,6 +15,8 @@ import Blog from "./pages/blog";
 import "./App.css";
 import ShopContext from "./components/shopcontext";
 import Details from "./pages/details";
+import Sidebar from "./components/Sidebar";
+import Chart from "./chart/Chart";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -34,6 +36,7 @@ function App() {
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Layout />}>
+              <Route path="part" element={<Chart />} />
               <Route index element={<Home />} />
               <Route path="shop" element={<Shop />} />
               <Route path="blog" element={<Blog />} />
@@ -41,10 +44,12 @@ function App() {
               <Route path="contact" element={<Contact />} />
               <Route path="login" element={<Login />} />
               <Route path="signup" element={<Signup />} />
-              <Route path="forgotpasword" element={<ForgotPassword />} />
+              <Route path="forgotpassword" element={<ForgotPassword />} />
               <Route path="cart" element={<Cart />} />
               <Route path="checkout" element={<Checkout />} />
               <Route path="details" element={<Details />} />
+
+              <Route path="sidebar" element={<Sidebar />} />
             </Route>
           </Routes>
         </BrowserRouter>

@@ -174,7 +174,7 @@ input:focus {
 
 .banner .back-details {
   background: url(/src/assets/images/back.jpg);
-  height: 30vh;
+  height: 80vh;
   background-position: top 25% right 0;
   background-size: cover;
   width: 100%;
@@ -183,6 +183,8 @@ input:focus {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 2px;
 }
 .banner .back-details h1 {
   font-size: 52px;

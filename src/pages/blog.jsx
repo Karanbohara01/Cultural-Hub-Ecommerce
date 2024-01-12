@@ -45,7 +45,7 @@ const blog = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="card-body">
-                      <h5 className="card-title">Marvel Clein</h5>
+                      <h5 className="card-title">Sushma Sharma</h5>
                       <p className="card-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
                         <br /> Quibusdam tempore unde aperiam, consectetur harum
@@ -70,7 +70,7 @@ const blog = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="card-body">
-                      <h5 className="card-title">Melisa Ivy</h5>
+                      <h5 className="card-title">Sushmita Bishwokarma</h5>
                       <p className="card-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit{" "}
                         <br />. Doloribus maxime consequatur, ipsam architecto
@@ -97,7 +97,7 @@ const blog = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="card-body">
-                      <h5 className="card-title">Tristian Ann</h5>
+                      <h5 className="card-title">Yanish Singh</h5>
                       <p className="card-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit{" "}
                         <br />. Doloribus maxime consequatur, ipsam architecto
@@ -124,7 +124,7 @@ const blog = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="card-body">
-                      <h5 className="card-title">Phillip Omosh</h5>
+                      <h5 className="card-title">Aashish Mool</h5>
                       <p className="card-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit{" "}
                         <br />. Doloribus maxime consequatur, ipsam architecto
@@ -150,7 +150,7 @@ const blog = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="card-body">
-                      <h5 className="card-title">Melisa Ivy</h5>
+                      <h5 className="card-title">Karan Bohara</h5>
                       <p className="card-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit{" "}
                         <br />. Doloribus maxime consequatur, ipsam architecto

@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
-// import React, { useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import pr1 from "../assets/images/products/f1.jpg";
 import pr2 from "../assets/images/products/f2.jpg";
 import { RiDeleteBack2Line } from "react-icons/ri";

@@ -1,0 +1,59 @@
+/* AdminProductsPage.css */
+
+.admin-container {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    max-width: 800px;
+    max-height: 800px;
+    margin-bottom: 80px;
+    color: black;
+}
+
+h2 {
+    color: white;
+}
+
+.tab-content {
+    margin-top: 20px;
+
+}
+
+form .admin {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+.btn-primary,
+.btn-success,
+.btn-danger {
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+.btn-primary:hover,
+.btn-success:hover,
+.btn-danger:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+
+}
+
+.active {
+    color: var(--primary);
+    text-decoration: none;
+
+}
+
+/* Add more styles as needed */

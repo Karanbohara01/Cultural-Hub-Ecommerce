@@ -175,7 +175,7 @@ const checkout = () => {
                     type="text"
                     className="form-control"
                     id="inputAddress"
-                    placeholder="1234 Main St"
+                    placeholder="Balkumari,Lalitpur"
                   />
                 </div>
                 <div className="col-12">
@@ -186,7 +186,7 @@ const checkout = () => {
                     type="text"
                     className="form-control"
                     id="inputAddress2"
-                    placeholder="Apartment, studio, or floor"
+                    placeholder="Kumari Mall,3nd floor"
                   />
                 </div>
                 <div className="col-md-6">
@@ -199,9 +199,12 @@ const checkout = () => {
                   <label htmlFor="inputState" className="form-label">
                     State
                   </label>
-                  <select id="inputState" className="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                  <select style={{height:50}} id="inputState" className="form-select">
+                    <option selected>Salyan</option>
+                    <option>Kathmandu</option>
+                    <option>Lalitpur</option>
+                    <option>Pokhara</option>
+                    <option>Butwal</option>
                   </select>
                 </div>
                 <div className="col-md-2">

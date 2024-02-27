@@ -32,7 +32,7 @@ const home = () => {
                       <h1>Super Value Deals</h1>
                       <h2>On all products</h2>
 
-                      <p className="mb-3">Save more today with Apneck</p>
+                      <p className="mb-3">Save more today with C-Hub</p>
 
                       <Link
                         to="/shop"

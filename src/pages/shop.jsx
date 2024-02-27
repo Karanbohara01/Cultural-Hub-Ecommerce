@@ -1,4 +1,5 @@
 // shop.jsx
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import Shopitems from "../components/shopitems";
 import Newsletter from "../components/newsLetter";
@@ -70,7 +71,6 @@ const shop = () => {
         </div>
       </section>
       <Hero />
-
       <Newsletter />
     </>
   );

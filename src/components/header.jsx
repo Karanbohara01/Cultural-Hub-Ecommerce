@@ -187,7 +187,7 @@ const Header = () => {
                 <p className="text-black">The trending outfits at 100% off</p>
               </div>
               <div className="col-md-2">
-                <a href="tel:+">Call us at +1 (234) 567-890</a>
+                <a href="tel:+">Call us at +977-9828848192</a>
               </div>
               <div className="col-md">
                 <Link className="links fs-4">
@@ -230,9 +230,14 @@ const Header = () => {
                   {showMenu ? <AiOutlineClose /> : <AiOutlineMenu />}
                 </span>
               </button>
-              <Link to="/">
-                <img src={logo} alt="logo" className="img-fluid logo" />
-              </Link>
+
+                {/*<img src={logo} alt="logo" className="img-fluid logo" />*/}
+               <Link to={"/"}>
+                 <div style={{marginTop:10}}>
+                   <h3 >Cultural-Hub</h3>
+
+                 </div>
+               </Link>
               <button className="cart-span fs-3 d-md-none">
                 <Link
                   to="cart"

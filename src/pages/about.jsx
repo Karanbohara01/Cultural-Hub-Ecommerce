@@ -67,16 +67,17 @@ const About = () => {
               <b>Who are we?</b>
             </h1>
             <p className="card-text mb-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />{" "}
-              Quibusdam tempore unde aperiam, consectetur harum a eum error,{" "}
-              <br /> libero nemo quisquam ex assumenda corrupti rerum aut quod
-              et sint facere reprehenderit?
+              We value your time and look forward to serving you with dedication during our business hours. <br />{" "}
+              you have any questions or require further information, do not hesitate to reach out to us. {" "}
+              <br />  Your satisfaction is our priority.
             </p>
-            <p className="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />{" "}
-              Quibusdam tempore unde aperiam, consectetur harum a eum error,{" "}
-              <br /> libero nemo quisquam ex assumenda corrupti rerum aut quod
-              et sint facere reprehenderit?
+            <p className="card-text ">
+              Feel free to visit our office at the provided address {" "}
+              We appreciate your trust in us and strive  to<br/> provide the best{" "}
+
+              service possible.
+              <br/>
+              Thank you for choosing us!
             </p>
           </div>
         </div>

@@ -16,19 +16,19 @@ const footer = () => {
         <div className="container-xxl">
           <div className="row justify-content-center justify-content-md-start">
             <div className="col-md-4 col-lg-4 mb-4 mb-md-0 ">
-              <h2 className="footer-title mb-3">
+              <h5 className="footer-title mb-3">
                 <b>Contact</b>
-              </h2>
+              </h5>
               <div className="mb-3">
                 <p>
-                  <b>Address:</b> Thika town, Naltex building, 2nd floor
+                  <b>Address:</b> Balkumari,Lalitpur,Nepal
                 </p>{" "}
               </div>
               <div className="mb-3">
                 <p>
                   <b>Phone:</b>{" "}
-                  <a className="footer-tel" href="tel:+1234567890">
-                    Call us at +1 (234) 567-890
+                  <a className="footer-tel" href="tel:+977-9828848192">
+                    Call us at +977-9828848192
                   </a>
                 </p>{" "}
               </div>
@@ -44,7 +44,7 @@ const footer = () => {
               </div>
               <div className="socials d-flex gap-3">
                 <Link
-                  to="https://discord.com/channels/1027937184768081950/1027937184768081952"
+                  to="#"
                   id="footer-link"
                   target="_blank"
                   className="gap-3"
@@ -52,7 +52,7 @@ const footer = () => {
                   <BsDiscord />
                 </Link>
                 <Link
-                  to="https://twitter.com/eclarkhalid"
+                  to="#"
                   id="footer-link"
                   target="_blank"
                   className="gap-3"
@@ -60,14 +60,14 @@ const footer = () => {
                   <BsTwitter />
                 </Link>
                 <Link
-                  to={"https://github.com/Eclarkhalid"}
+                  to={"#"}
                   className="gap-3"
                   id="footer-link"
                 >
                   <BsGithub />
                 </Link>
                 <Link
-                  to="https://app.slack.com/client/T0195LMKD1R/D04QEBN1J80/rimeto_profile/U04PQHERFM1?cdn_fallback=2"
+                  to="#"
                   id="footer-link"
                   target="_blank"
                   className="gap-3"
@@ -77,9 +77,9 @@ const footer = () => {
               </div>
             </div>
             <div className="col-md-2 col-lg-2 mb-3 mb-md-0">
-              <h2 className="footer-title mb-3">
+              <h4 className="footer-title mb-3">
                 <b>About</b>
-              </h2>
+              </h4>
               <div className="mb-3">
                 {" "}
                 <Link to="/about" id="footer-links">
@@ -106,9 +106,9 @@ const footer = () => {
               </div>
             </div>
             <div className="col-md-2 col-lg-2 mb-3 mb-md-0">
-              <h2 className="footer-title mb-3">
+              <h5 className="footer-title mb-3">
                 <b>Account</b>
-              </h2>
+              </h5>
               <div className="mb-3">
                 {" "}
                 <Link to="/login" id="footer-links">
@@ -141,9 +141,9 @@ const footer = () => {
               </div>
             </div>
             <div className="col-md-4 col-lg-4">
-              <h2 className="footer-title mb-3">
+              <h5 className="footer-title mb-3">
                 <b>Install App</b>
-              </h2>
+              </h5>
               <p className="mb-3">
                 Available On Google Play Services & App Store
               </p>
@@ -164,8 +164,13 @@ const footer = () => {
               </div>
               <p className="mb-3">Payment Methods</p>
               <div className="pay">
-                <Link to="https://www.paypal.com/signin" target="_blank">
-                  <img src={visa} alt="" />
+                <Link to="#" target="_blank">
+                  <div style={{height:150}}>
+
+                    <img style={{height:70,marginBottom:10,width:186}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Esewa_logo.webp/1200px-Esewa_logo.webp.png" alt="" />
+                    <img style={{height:70,marginBottom:10,width:186}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnXJo7MldJUCu6UDD_qW6C0wdrrk3egYDKWTU7tgwwwg&s" alt=""/>
+
+                  </div>
                 </Link>
               </div>
             </div>

@@ -1,178 +1,64 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
-import b1 from "../assets/images/blog/b1.jpg";
-import b6 from "../assets/images/blog/b6.jpg";
-import b2 from "../assets/images/blog/b2.jpg";
-import b3 from "../assets/images/blog/b3.jpg";
-import b4 from "../assets/images/blog/b4.jpg";
-import b5 from "../assets/images/blog/b5.jpg";
-import b7 from "../assets/images/blog/b7.jpg";
 
-const blog = () => {
-  return (
-    <>
-      <section className="blog-wrapper p-5">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <div className="shop-details text-center align-items-center">
-                <h1 className="text-white">#Read More</h1>
-                <p className="text-white fs-3">
-                  Get to know what our trusted customers say...
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section className="blogs p-5">
-        <div className="container-xxl container">
-          <div className="row">
-            <div className="d-flex flex-column align-items-center">
-              <h1 className="mb-3">Explore more in our library</h1>
-              <p className="mb-4">Why we have trending Outfits Everywhere</p>
-            </div>
-            <div className="col-12 p-5">
-              <div className="card mb-3">
-                <div className="row g-0">
-                  <div className="col-md-4">
-                    <img
-                      src={b1}
-                      className="img-fluid rounded-start"
-                      alt="..."
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body">
-                      <h5 className="card-title">Sushma Sharma</h5>
-                      <p className="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-                        <br /> Quibusdam tempore unde aperiam, consectetur harum
-                        a eum error, <br /> libero nemo quisquam ex assumenda
-                        corrupti rerum aut quod et sint facere reprehenderit?
-                      </p>
-                      <p className="card-text">
-                        <small className="text-body-secondary">
-                          Last updated 3 mins ago
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12 p-5">
-              <div className="card mb-3">
-                <div className="row g-0">
-                  <div className="col-md-4">
-                    <img src={b2} alt="" className="img-fluid rounded-start" />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body">
-                      <h5 className="card-title">Sushmita Bishwokarma</h5>
-                      <p className="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit{" "}
-                        <br />. Doloribus maxime consequatur, ipsam architecto
-                        incidunt volup <br />
-                        tate! Iste ipsa numquam quos nam quibusdam perferendis
-                        excepturi rem, a quo laudantium libero dolore nisi.
-                      </p>
-                      <p className="card-text">
-                        <small className="text-body-secondary">
-                          Last Updated now
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+// eslint-disable-next-line no-unused-vars
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { Card, Col, Container, Row } from 'react-bootstrap';
+import {Link} from "react-router-dom";
+
+const BlogList = () => {
+    const [blogs, setBlogs] = useState([]);
+
+    useEffect(() => {
+        // Fetch blogs when the component mounts
+        fetchBlogs();
+    }, []);
+
+    const fetchBlogs = async () => {
+        try {
+            const response = await axios.get('http://localhost:8787/user/blog/getAll');
+            setBlogs(response.data);
+        } catch (error) {
+            console.error('Error fetching blogs:', error);
+        }
+    };
+
+    return (
+        <Container>
+            <div style={{display:'flex',justifyContent:'space-between'}}>
+                <h1 className="mt-4 mb-4">Blogs</h1>
+                <Link to={'/add-blog'}>
+                    {/*<p style={{marginTop:30,fontSize:30}}>Click Here to Add Your Blog Here!</p>*/}
+                    <button style={{marginTop:30,backgroundColor:'pink',color:'black',fontSize:20,fontWeight:'bold'}}>+ Add Your Blog Here!</button>
+
+                </Link>
             </div>
 
-            <div className="col-12 p-5">
-              <div className="card mb-3">
-                <div className="row g-0">
-                  <div className="col-md-4">
-                    <img src={b3} alt="" className="img-fluid rounded-start" />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body">
-                      <h5 className="card-title">Yanish Singh</h5>
-                      <p className="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit{" "}
-                        <br />. Doloribus maxime consequatur, ipsam architecto
-                        incidunt volup <br />
-                        tate! Iste ipsa numquam quos nam quibusdam perferendis
-                        excepturi rem, a quo laudantium libero dolore nisi.
-                      </p>
-                      <p className="card-text">
-                        <small className="text-body-secondary">
-                          Last Updated now
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-12 p-5">
-              <div className="card mb-3">
-                <div className="row g-0">
-                  <div className="col-md-4">
-                    <img src={b4} alt="" className="img-fluid rounded-start" />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body">
-                      <h5 className="card-title">Aashish Mool</h5>
-                      <p className="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit{" "}
-                        <br />. Doloribus maxime consequatur, ipsam architecto
-                        incidunt volup <br />
-                        tate! Iste ipsa numquam quos nam quibusdam perferendis
-                        excepturi rem, a quo laudantium libero dolore nisi.
-                      </p>
-                      <p className="card-text">
-                        <small className="text-body-secondary">
-                          Last Updated now
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12 p-5">
-              <div className="card mb-3">
-                <div className="row g-0">
-                  <div className="col-md-4">
-                    <img src={b2} alt="" className="img-fluid rounded-start" />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body">
-                      <h5 className="card-title">Karan Bohara</h5>
-                      <p className="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit{" "}
-                        <br />. Doloribus maxime consequatur, ipsam architecto
-                        incidunt volup <br />
-                        tate! Iste ipsa numquam quos nam quibusdam perferendis
-                        excepturi rem, a quo laudantium libero dolore nisi.
-                      </p>
-                      <p className="card-text">
-                        <small className="text-body-secondary">
-                          Last Updated now
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
+            <Row>
+                {blogs.map((blog) => (
+                    <Col key={blog.blogId} className={"d-flex justify-content-center"}>
+                        <Card style={{ width: 1200,height:300, marginBottom: 50, backgroundColor: 'pink',color:'black',display:'flex',flexDirection:'row' ,justifyContent:'space-between'}}>
+                            {blog.image && (
+                                <Card.Img
+                                    variant="top"
+                                    src={`data:image/png;base64,${blog.image}`}
+                                    alt={`Blog ${blog.blogId}`}
+                                    style={{height:300,width:200,  objectFit:'cover', borderRadius: 10 }}
+                                />
+                            )}
+                            <Card.Body >
+                                <Card.Title ><p style={{color:'black',fontSize:20}}>{blog.name}</p></Card.Title>
+                                <Card.Text><p style={{color:'black',fontSize:15}}>{blog.blogs}</p></Card.Text>
+                                <Card.Text><p style={{color:'black',fontSize:15}}>Date: {new Date(blog.date).toLocaleDateString()}</p></Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                ))}
+            </Row>
+        </Container>
+    );
 };
 
-export default blog;
+export default BlogList;
+

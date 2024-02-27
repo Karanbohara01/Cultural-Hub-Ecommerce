@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;600;700&display=swap");
 
 :root {
-  --primary: #00a97f;
-  --light: rgba(133, 198, 218, 255);
+  --primary: red;
+  --light: green;
   --dark: rgba(13, 13, 10, 255);
   --darker: rgba(234, 157, 90, 255);
-  --lighter: #cbd6cf;
-  --lighter1: #c3dacc86;
-  --lighter2: #e4f0e9da;
+  --lighter: lightBlue;
+  --lighter1: pink;
+  --lighter2: pink;
   --darken: #cca27e;
   --color: orangered;
   --search: #ff6000;
@@ -39,7 +39,7 @@ a {
   transition: 0.5s ease;
 }
 a:hover {
-  color: #535bf2;
+  color:red;
 }
 
 p {
@@ -66,7 +66,7 @@ input:focus {
 }
 
 .logo {
-  max-width: 100%;
+  min-width: 100%;
   height: 40px;
 }
 .navbar-top {
@@ -93,6 +93,7 @@ input:focus {
 .header-cart {
   max-width: 43px;
   max-height: 43px;
+
 }
 
 .navbar-toggler-icon {
@@ -150,7 +151,7 @@ input:focus {
 
 .active {
   color: var(--primary);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .not-active {
@@ -1092,3 +1093,287 @@ footer .footer-tel:hover {
   flex: 1 1 auto;
   padding: 24px 1rem !important;
 }
+
+
+
+/*
+Admin Dashboard Starts here
+*/
+
+.admin-sidebar {
+  max-width: 250px;
+  width: 270px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding-top: 20px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+
+
+
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+
+
+}
+
+
+
+.admin-sidebar li {
+  margin-bottom: 10px;
+
+
+
+
+}
+/*@media only screen and (min-width: 700px) {*/
+/*  .admin-sidebar {*/
+/*    display: none;*/
+
+/*  }*/
+
+/*}*/
+
+
+
+
+.admin-sidebar a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top:10px;
+
+
+}
+
+.admin-sidebar a:hover {
+  background-color: #555;
+}
+
+.admin-sidebar a:active {
+  background-color: #555;
+  text-decoration: none;
+}
+
+
+
+
+.admin-header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: orange;
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: op;
+
+
+}
+
+.logo {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: orange;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  position: relative;
+}
+
+input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+
+}
+
+.search-container svg {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+}
+
+.logout-button {
+  background-color: #555;
+  color: orange;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.more-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.more-dropdown svg {
+  cursor: pointer;
+}
+
+
+
+
+
+/*
+Admin Dashboard ends here
+*/
+
+
+/* Add this CSS to your global stylesheet or within the component */
+.event-calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+
+
+}
+
+.event-form {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+}
+
+.event-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.event-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+.event-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.event-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust the styles as needed */
+
+/* Default styles for screens less than 700 pixels wide */
+.pie-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Media query for screens with a minimum width of 700 pixels */
+@media only screen and (min-width: 700px) {
+  .pie-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+}
+
+
+.admin-sidebar a:hover {
+  background-color: #555;
+}
+
+.admin-sidebar a:active {
+  background-color: #555;
+
+}
+.admin-sidebar a:checked{
+  background-color: red;
+}
+
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.recharts-wrapper {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Customize other styles as needed */
+
+
+
+/*Sign Up Css Starts Here*/
+
+
+
+
+.card  {
+  border: none;
+  border-radius: 17px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /*max-width: 400px;*/
+}
+
+.card-body {
+  padding: 40px;
+}
+
+.alert-danger {
+  margin-top: 20px;
+}
+
+.password-criteria {
+  color: black;
+  font-size: 21px;
+}
+
+.input-group-text {
+  cursor: pointer;
+}
+
+/* Add any other styles or modifications as needed
+
+/*Sign Up Css Ends Here*/
+
+
